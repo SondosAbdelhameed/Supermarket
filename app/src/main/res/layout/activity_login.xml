@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.supermarket.Navigation.Login"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/rl"
+    android:weightSum="7">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="5"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="40dp"
+    android:background="@color/primary_alpha">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:textStyle="bold|italic"
+        android:layout_gravity="top"
+        android:layout_margin="20dp"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/edite_text">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mail"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mail"
+            android:inputType="textEmailAddress"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Email*"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/edite_text">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="******"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignIn"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@color/button"
+        android:onClick="SignIn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign up ?"
+            android:textColor="@color/white"
+            android:onClick="SignUp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Forget Password ?"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

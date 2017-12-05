@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.supermarket.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rl"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:background="@color/primary_alpha">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/offers"
+                    android:layout_marginRight="2.5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sales"
+                    android:layout_marginLeft="2.5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:background="@color/primary_alpha"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cat_recycl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="@color/primary_alpha"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/newi"
+                    android:background="@color/white"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:text="Jobs"
+                    android:textColor="#FF0404"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <include layout="@layout/jobs" />
+                        <include layout="@layout/jobs"/>
+                        <include layout="@layout/jobs"/>
+                        <include layout="@layout/jobs"/>
+                        <include layout="@layout/jobs"/>
+                        <include layout="@layout/jobs"/>
+                        <include layout="@layout/jobs" />
+
+                    </LinearLayout>
+                </ScrollView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textColor="@color/white"
+                    android:text="Call  19564"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="2.5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+      <!--  <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/primary_alpha">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+                <include layout="@layout/popular" />
+                <include layout="@layout/popular"/>
+                <include layout="@layout/popular"/>
+                <include layout="@layout/popular"/>
+                <include layout="@layout/popular"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        -->
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/primary_alpha"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pop_recycl" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

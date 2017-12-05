@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.supermarket.Navigation.UpdateProfile"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:background="@drawable/border_back">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edite_text"
+        android:layout_margin="10dp"
+        app:hintTextAppearance="@color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userNameU"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edite_text"
+        android:layout_margin="10dp"
+        app:hintTextAppearance="@color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/phoneU"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edite_text"
+        android:layout_margin="10dp"
+        app:hintTextAppearance="@color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressU"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:id="@+id/update"
+        android:background="@color/button"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:onClick="Update"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_user"
+        android:layout_gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/nav_name"
+            android:text="Name"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/nav_mail"
+            android:text="Mail"/>
+    </LinearLayout>
+</LinearLayout>

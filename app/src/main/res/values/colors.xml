@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0c173a</color>
+    <color name="primary_alpha">#990c173a</color>
+    <color name="colorPrimaryDark">#000016</color>
+    <color name="colorAccent">#383d65</color>
+    <color name="black">#000000</color>
+    <color name="black_alpha">#99000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_alpha">#99ffffff</color>
+    <color name="light_gray">#808080</color>
+    <color name="button">#5671b2</color>
+    <color name="jobs">#995671b2</color>
+    <color name="line">#ccccff</color>
+</resources>
